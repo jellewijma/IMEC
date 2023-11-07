@@ -19,6 +19,7 @@ body {
 .titel {
     font-size: 40px;
     font-weight: bold;
+    padding-bottom: 20px;
 }
 
 
@@ -224,50 +225,82 @@ header .greet {
     font-weight: 700;
 }
 
-.menu {
-    background-color: #F5F5F5;
+.recepten-voor-jou {
     padding: 80px 0px 80px 80px;
 }
 
-.ohm-titel {
-    font-size: 40px;
-}
-
-.op-het-menu {
+.recepten {
     display: flex;
     gap: 15px;
 
     overflow-x: scroll;
 }
 
-.kaart {
-    width: 40vw;
+.recept-kaart {
+    width: calc(33.33vw - 63.33px);
 }
 
-.kaart:nth-child(3) {
+.recept-kaart:nth-child(4) {
     opacity: 0.2;
 }
 
-.kaart img {
+.recept-kaart img {
     height: auto;
-    width: 40vw;
+    width: calc(33.33vw - 63.33px);
     aspect-ratio: 3/2;
     object-fit: cover;
     object-position: center;
 }
 
-.kaart .recept-info {
+.recept-kaart .recept-info {
     padding: 20px;
     background: #D9D9D9;
+    display: flex;
+    justify-content: space-between;
 }
 
-.kaart .recept-info .recept-naam {
+.recept-kaart .recept-info .recept-naam {
     font-size: 24px;
     font-weight: 700;
 }
 
-.kaart .recept-info .product-aantal {
+.recept-kaart .recept-info .product-aantal {
     color: #17A400;
+}
+
+.recept-kaart .recept-info .recept-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.spaaracties {
+    padding: 80px;
+}
+
+.spaaracties .spaaractie {
+    display: flex;
+    gap: 15px;
+}
+
+.spaaracties .spaaractie .spaaractie-kaart {
+    width: calc(33.33vw - 63.33px);
+}
+
+.spaaracties .spaaractie .spaaractie-kaart img {
+    aspect-ratio: 3/2;
+    width: calc(33.33vw - 63.33px);
+}
+
+.spaaracties .spaaractie .spaaractie-kaart .aanbieding-info {
+    padding: 20px;
+    background: #D9D9D9;
+}
+
+.spaaracties .spaaractie .spaaractie-kaart .aanbieding-info .aanbieding-product {
+    font-size: 24px;
+    font-weight: 700;
 }
 
 
@@ -282,4 +315,8 @@ header .greet {
     .hide-scroll::-webkit-scrollbar {
         display: none;
     }
+}
+
+.liked {
+    background-color: #17A400;
 }
