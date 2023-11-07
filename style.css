@@ -208,7 +208,7 @@ nav {
 }
 
 
-.add-to-chart-button hoover {
+/* .add-to-chart-button:hover {
     width: 100%;
     height: auto;
     object-fit: cover;
@@ -217,7 +217,7 @@ nav {
     margin: 20px;
     margin-top: -40px;
 
-}
+} */
 
 
 .image-container img {
