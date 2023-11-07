@@ -7,10 +7,225 @@
 body {
     text-decoration: none;
     color: black;
-    margin: 60px;
+    /* margin: 60px; */
+    overflow-x: hidden;
+
+    font-family: 'Inter', sans-serif;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+/* standard classes */
+
+.titel {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+
+/* custom */
+
+header nav {
+    width: 100vw;
+    height: 65px;
+
+    background: #D9D9D9;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* margin: 15px; */
+}
+
+header nav div:first-child {
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+header nav div:first-child a {
+    text-decoration: none;
+    color: black;
+    padding: 15px;
+    color: #000;
+
+    font-family: Inter;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+header nav div:first-child .logo {
+    text-decoration: none;
+    color: black;
+    padding: 15px;
+    background-color: #5c5c5c;
+}
+
+header nav .search {
+    width: 20%;
+    padding: 10px;
+    border: solid 2px black;
+    background: #D9D9D9;
+    color: #000;
+}
+
+header nav .search::placeholder {
+    color: #000;
+}
+
+header nav div:last-child {
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+header nav div:last-child a {
+    text-decoration: none;
+    color: black;
+    padding: 15px;
+}
+
+
+header .greet {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100vw;
+    height: 225px;
+    font-size: 48px;
+    font-weight: bold;
+}
+
+.menu {
+    background-color: #F5F5F5;
+    padding: 80px 0px 80px 80px;
+}
+
+.ohm-titel {
+    font-size: 40px;
+}
+
+.op-het-menu {
+    display: flex;
+    gap: 15px;
+
+    overflow-x: scroll;
+}
+
+.kaart {
+    width: 40vw;
+}
+
+.kaart:nth-child(3) {
+    opacity: 0.2;
+}
+
+.kaart img {
+    height: auto;
+    width: 40vw;
+    aspect-ratio: 3/2;
+    object-fit: cover;
+    object-position: center;
+}
+
+.kaart .recept-info {
+    padding: 20px;
+    background: #D9D9D9;
+}
+
+.kaart .recept-info .recept-naam {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.kaart .recept-info .product-aantal {
+    color: #17A400;
+}
+
+
+.voorjou {
+    padding: 80px;
+}
+
+.voorjou .wrapper {
+    display: flex;
+    flex-direction: row;
+}
+
+.voorjou img {
+    width: 60vw;
+    aspect-ratio: 5/4;
+    object-fit: cover;
+    object-position: top;
+}
+
+.voorjou .wrapper .side {
+    padding: 32px;
+    background: #B0B0B0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.voorjou .wrapper .side p {
+    font-size: 24px;
+}
+
+.voorjou .wrapper .side h3 span {
+    font-size: 48px;
+}
+
+.voorjou .wrapper .side h3 {
+    font-size: 40px;
+}
+
+.voorjou .wrapper .side button {
+    width: fit-content;
+    padding: 20px;
+    background: #D9D9D9;
+    border: none;
+    font-size: 24px;
+}
+
+.aanbiedingen {
+    padding: 80px;
+    background-color: #F5F5F5;
+}
+
+.aanbieding {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
 
 }
 
+.aanbiedingen .aanbieding-kaart {
+    display: flex;
+    flex-direction: column;
+}
+
+.aanbiedingen .aanbieding-kaart img {
+    aspect-ratio: 2/3;
+    width: calc(25vw - 51.25px);
+    object-fit: cover;
+    object-position: 75%;
+}
+
+.aanbiedingen .aanbieding-kaart .aanbieding-info {
+    padding: 20px;
+    background: #D9D9D9;
+}
+
+.aanbiedingen .aanbieding-kaart .aanbieding-info .aanbieding-product {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+
+/*
 .grid-container {
     display: grid;
     grid-template-columns: repeat (12, 80px);
@@ -218,7 +433,7 @@ nav {
     margin-top: -40px;
 
 } */
-
+/*
 
 .image-container img {
     width: 100%;
@@ -370,6 +585,7 @@ main {
 
 
 /* < !--zoekresultaat--> */
+/*
 .grid-container {
     display: grid;
     grid-template-columns: repeat (3, 2fr);
@@ -449,5 +665,20 @@ main {
         align-content: left;
         margin-left: -1px;
         margin-top: 100px;
+    }
+}
+*/
+
+
+@media only screen and (max-width: 600px) {
+    .hide-scroll {
+        -ms-overflow-style: none;
+        /* IE and Edge */
+        scrollbar-width: none;
+        /* Firefox */
+    }
+
+    .hide-scroll::-webkit-scrollbar {
+        display: none;
     }
 }

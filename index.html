@@ -17,6 +17,12 @@
         href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap"
         rel="stylesheet">
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200;0,6..12,300;0,6..12,400;0,6..12,500;0,6..12,600;0,6..12,700;0,6..12,800;0,6..12,900;0,6..12,1000;1,6..12,200;1,6..12,300;1,6..12,400;1,6..12,500;1,6..12,600;1,6..12,700;1,6..12,800;1,6..12,900;1,6..12,1000&display=swap"
+        rel="stylesheet">
+
 </head>
 
 
@@ -25,178 +31,154 @@
     <!--navigation bar -->
 
     <header>
-        <div id="brand"> <a href="/"> Effie </a> </div>
-        <nav class="">
-            <a href="index.html">Home</a>
-            <a href="#">Producten</a>
-            <a href="recepten.html">Recepten</a>
-            <a href="voorraad.html">Voorraad</a>
-            <a href="#"><img src="buttons/basket.svg" alt=winkelwagen height=25px;> </a>
-            <a href="#"><img src="buttons/profile.svg" alt=Profiel height=25px;> </a>
+        <nav>
+
+            <div class="">
+                <a class="logo">logo</a>
+                <a class="">Recepten</a>
+                <a class="">Aanbiedingen</a>
+                <a class="">Alleproducten</a>
+            </div>
+
+            <input type="text" class="search" placeholder="zoeken">
+            </input>
+
+            <div class="">
+                <a class="">Mijn vooraad</a>
+                <a class="">Account</a>
+                <a class="">winkelwagen</a>
+            </div>
+
         </nav>
+
+        <h2 class="greet">Hallo Jelle!</h2>
+
     </header>
     <main>
-        <main class="grid-container">
-            <div class="" style="grid-column: span 4;">
-                <div class="grid-item-hallo">
-                    <h1> Hallo Bert! </h1>
-                </div>
-
-                <!--search bar-->
-
-                <div class="container search-bar-container">
-
-                    <form action="" class="search-bar">
-                        <input type="text" placeholder="search anything" name="q"><a href="zoekresultaat.html">
-                            <img src="buttons/search.svg" height=25px;> </a>
-                    </form>
-
-
-                </div>
-
-
-                <!--GEPLAND RECEPT-->
-
-                <div class="Titel sectie home">
-                    <h1> Vandaag op het menu</h1>
-
-                    <br>
-                    <h3>Zalmtaart</h3>
-                </div>
-                <br><br><br><br><br><br>
-
-                <div class="container-leeg-menu">
-
-
-                </div>
-
-                <!--RECEPTEN -->
-
-                <br><br><br><br><br><br>
-
-
-                <div class="Titel sectie home">
-                    <h1> Recepten aanbevolen voor jou </h1>
-                </div>
-
-                <div class="container">
-                    <div class="card">
-                        <div class="image-container">
-                            <a href="#">
-                                <img src="images/pexels-julie-aagaard-2097090.jpg"> </a>
-
-
-                            <div class="recept-info">
-                                <h2> Pesto Pasta</h2>
-                                <p> 10 minutes </p>
-                            </div>
-
-                            <div class="button-container"> <a href="#">
-
-                                    <a href="#"> <button class="add-to-favorites-button">
-                                            <h1>♥</h1>
-                                        </button> </a>
-
-                                    <button class="add-to-chart-button">
-                                        <h1>+</h1>
-                                    </button> </a>
-
-                            </div>
-                        </div>
-
-                    </div>
-
-
-                    <div class="card">
-                        <div class="image-container">
-                            <a href="#">
-                                <img src="images/pexels-valeria-boltneva-15913452.jpg"> </a>
-
-                            <div class="recept-info">
-                                <h2> Pesto Pasta</h2>
-                                <p> 10 minutes </p>
-                            </div>
-
-                            <div class="button-container"> <a href="#">
-
-
-                                    <a href="#"> <button class="add-to-favorites-button">
-                                            <h1>♥</h1>
-                                        </button> </a>
-
-                                    <button class="add-to-chart-button">
-                                        <h1>+</h1>
-                                    </button> </a>
-
-
-                            </div>
-                        </div>
-                    </div>
-
-
-                    <div class="card">
-                        <div class="image-container">
-                            <a href="#">
-                                <img src="images/pexels-lumn-1410235.jpg"> </a>
-
-                            <div class="recept-info">
-                                <h2> Pesto Pasta</h2>
-                                <p> 10 minutes </p>
-                            </div>
-
-                            <div class="button-container"> <a href="#">
-
-                                    <a href="#"> <button class="add-to-favorites-button">
-                                            <h1>♥</h1>
-                                        </button> </a>
-
-                                    <button class="add-to-chart-button">
-                                        <h1>+</h1>
-                                    </button> </a>
-
-                            </div>
-                        </div>
-
+        <section class="menu">
+            <h2 class="titel">Op het menu</h2>
+            <div class="op-het-menu hide-scroll" id="">
+                <div class="kaart">
+                    <h3>Vandaag</h3>
+                    <img src="https://images.unsplash.com/photo-1588195538326-c5b1e9f80a1b?q=80&w=1350&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                        alt="">
+                    <div class="recept-info">
+                        <p class="recept-naam">Zalmtaart</p>
+                        <p class="voorbereidingstijd">40 min</p>
+                        <p class="product-aantal">9/9 producten</p>
                     </div>
                 </div>
-
-
-
-                <!--AANBIEDINGEN-->
-
-
-                <div class="Titel sectie home">
-                    <h1> Aanbiedingen voor jou </h1>
-
-                    <br>
-
+                <div class="kaart">
+                    <h3>Morgen</h3>
+                    <img src="https://images.unsplash.com/photo-1619894991209-9f9694be045a?q=80&w=1287&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                        alt="">
+                    <div class="recept-info">
+                        <p class="recept-naam">Lasagne</p>
+                        <p class="voorbereidingstijd">55 min</p>
+                        <p class="product-aantal">6/6 producten</p>
+                    </div>
                 </div>
-                <br><br><br><br><br><br>
-
-
-
-
-
-                <div class="container-leeg">
-
-
-                </div>
-
-
-        </main>
-        <br><br><br>
-
-        <footer>
-
-            <div class="container-leeg-footer">
-                <div class="Titel sectie home"> <br>
-
-
+                <div class="kaart">
+                    <h3>Overmorgen</h3>
+                    <img src="https://images.unsplash.com/photo-1516684732162-798a0062be99?q=80&w=1587&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                        alt="">
+                    <div class="recept-info">
+                        <p class="recept-naam">Rijst</p>
+                        <p class="voorbereidingstijd">55 min</p>
+                        <p class="product-aantal">6/6 producten</p>
+                    </div>
                 </div>
             </div>
 
-        </footer>
-        <script src="index.js"></script>
+        </section>
+        <section class="voorjou">
+            <h2 class="titel">Speciaal voor jou!</h2>
+            <div class="wrapper">
+                <img src="https://images.unsplash.com/photo-1624299831638-82c15fcafd2b?q=80&w=1287&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                    alt="">
+                <div class="side">
+                    <p>Geldig t/m 7 November</p>
+                    <h3><span class="bold">Vers gebak naar keuze</span> bij aankoop van minimaal $90,-.</h3>
+                    <button>bekijk keuze ></button>
+                </div>
+            </div>
+        </section>
+        <section class="aanbiedingen">
+            <h2 class="titel">Op het menu</h2>
+            <div class="aanbieding" id="">
+                <div class="aanbieding-kaart">
+                    <img src="https://images.unsplash.com/photo-1552329823-8eb0509f741c?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                        alt="">
+                    <div class="aanbieding-info">
+                        <p class="aanbieding-product">Zalmtaart</p>
+                        <p class="aanbieding-duur">40 min</p>
+                    </div>
+                </div>
+                <div class="aanbieding-kaart">
+                    <img src="https://images.unsplash.com/photo-1552329823-8eb0509f741c?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                        alt="">
+                    <div class="aanbieding-info">
+                        <p class="aanbieding-product">Zalmtaart</p>
+                        <p class="aanbieding-duur">40 min</p>
+                    </div>
+                </div>
+                <div class="aanbieding-kaart">
+                    <img src="https://images.unsplash.com/photo-1552329823-8eb0509f741c?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                        alt="">
+                    <div class="aanbieding-info">
+                        <p class="aanbieding-product">Zalmtaart</p>
+                        <p class="aanbieding-duur">40 min</p>
+                    </div>
+                </div>
+                <div class="aanbieding-kaart">
+                    <img src="https://images.unsplash.com/photo-1552329823-8eb0509f741c?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                        alt="">
+                    <div class="aanbieding-info">
+                        <p class="aanbieding-product">Zalmtaart</p>
+                        <p class="aanbieding-duur">40 min</p>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <section class="menu">
+            <h2 class="titel">Op het menu</h2>
+            <div class="op-het-menu hide-scroll" id="">
+                <div class="kaart">
+                    <h3>Vandaag</h3>
+                    <img src="https://images.unsplash.com/photo-1588195538326-c5b1e9f80a1b?q=80&w=1350&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                        alt="">
+                    <div class="recept-info">
+                        <p class="recept-naam">Zalmtaart</p>
+                        <p class="voorbereidingstijd">40 min</p>
+                        <p class="product-aantal">9/9 producten</p>
+                    </div>
+                </div>
+                <div class="kaart">
+                    <h3>Morgen</h3>
+                    <img src="https://images.unsplash.com/photo-1619894991209-9f9694be045a?q=80&w=1287&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                        alt="">
+                    <div class="recept-info">
+                        <p class="recept-naam">Lasagne</p>
+                        <p class="voorbereidingstijd">55 min</p>
+                        <p class="product-aantal">6/6 producten</p>
+                    </div>
+                </div>
+                <div class="kaart">
+                    <h3>Overmorgen</h3>
+                    <img src="https://images.unsplash.com/photo-1516684732162-798a0062be99?q=80&w=1587&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                        alt="">
+                    <div class="recept-info">
+                        <p class="recept-naam">Rijst</p>
+                        <p class="voorbereidingstijd">55 min</p>
+                        <p class="product-aantal">6/6 producten</p>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+    </main>
+
 </body>
 
 </html>
