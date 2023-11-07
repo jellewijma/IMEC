@@ -303,6 +303,41 @@ header .greet {
     font-weight: 700;
 }
 
+/*Mijn voorraad pagina*/ 
+
+   
+
+.search-voorraad
+{ 
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    gap: 15px;
+}
+
+.search-voorraad-input input {
+        width: 20vw;
+        padding: 10px;
+        border: solid 2px black;
+        background: #D9D9D9;
+        color: #000;
+}
+
+.search-voorraad-input input::placeholder{
+    color: black;
+}
+
+.search-voorraad .upload-kassabon-button button {
+    width: 10vw;
+    padding: 10px;
+    background: #B0B0B0;
+    color: #000;
+    border: none;
+}
+
+
+
+
 
 @media only screen and (max-width: 600px) {
     .hide-scroll {
