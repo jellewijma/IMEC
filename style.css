@@ -470,7 +470,7 @@ header .greet {
 .producten-wortel .product-kaart img {
     height: auto;
     width: calc(50vw - 87.5px);
-    aspect-ratio: 3/2;
+    aspect-ratio: 4/2;
     object-fit: cover;
     object-position: center;
 }
@@ -499,7 +499,6 @@ header .greet {
     gap: 10px;
 }
 
-
 .product-kaart .info-product .button-product-aantal .min {
     border-radius: 100px;
     width: 40px;
@@ -509,6 +508,7 @@ header .greet {
     font-size: 24px;
     font-weight: 700px;
     border: none;
+    
 
 }
 
@@ -521,6 +521,7 @@ header .greet {
     font-size: 24px;
     font-weight: 700px;
     border: none;
+
 
 }
 
