@@ -445,8 +445,8 @@ header .greet {
 }
 .resultaten-mijnvoorraad .filters-resultaat-voorraad button{
     font-size: 24px;
-    width: 10vw;
-    padding: 10px;
+    width:inherit;
+    padding: 20px;
     background: #B0B0B0;
     color: #000;
     border: none;
@@ -551,6 +551,120 @@ header .greet {
 .resultaten-mijnvoorraad .titel span {
     font-weight: 700;
 } 
+
+/*Recepten-pagina */
+
+.recepten-categorie {
+    padding: 80px;
+
+}
+.recepten-categorie .filters-recepten {
+    display: flex;
+    gap: 15px;
+
+}
+
+.recepten-categorie .filters-recepten button {
+    font-size: 24px;
+    width:inherit;
+    padding: 20px;
+    background: #B0B0B0;
+    color: #000;
+    border: none;
+    text-align: start;
+    font-weight: 400;
+}
+
+.recepten-categorie .filters-recepten .alle-filters {
+    background-color: #D9D9D9;
+}
+
+.recepten-categorie .titel {
+    font-weight: normal;
+} 
+
+
+.recepten-voor-jou .filters-recepten {
+    display: flex;
+    gap: 15px;
+    padding-bottom: 20px;
+
+}
+
+.recepten-voor-jou .filters-recepten button {
+    font-size: 24px;
+    width:inherit;
+    padding: 20px;
+    background: #B0B0B0;
+    color: #000;
+    border: none;
+    text-align: start;
+    font-weight: 400;
+}
+
+.recepten-voor-jou .filters-recepten .alle-filters {
+    background-color: #D9D9D9;
+}
+
+
+/*Recepten zoekresultaat appel*/
+
+.recepten-appel {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 15px;
+    padding: 80px;
+    justify-content: space-between;
+
+
+}
+
+.recepten-appel .product-kaart {
+    width: calc(50vw - 87.5px);
+}
+
+.recepten-appel .product-kaart img {
+    height: auto;
+    width: calc(50vw - 87.5px);
+    aspect-ratio: 4/2;
+    object-fit: cover;
+    object-position: center;
+}
+
+.recepten-appel .info-product {
+    padding: 20px;
+    background-color: #D9D9D9;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.recepten-appel .info-product .titel-product {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.recepten-appel .info-product .recept-buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+
+.recepten-appel .product-kaart .recept-naam {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.recepten-appel .product-kaart .info-product-tekst .product-aantal {
+    color: #17A400;
+}
+
+
+
+
 
 
 
