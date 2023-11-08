@@ -64,6 +64,8 @@ header nav div:first-child .logo {
     background-color: #5c5c5c;
 }
 
+/*zoekbalk menubalk*/ 
+
 header nav .zoekbalk {
     display: flex;
     flex-direction: row;
@@ -116,19 +118,80 @@ header nav .zoekbalk .submit {
 
 }
 
+/*zoekbalk header*/
+
+/*zoekbalk*/ 
+
+.search-voorraad {
+    font-size: 32px;
+    text-align: center; 
+} 
+
+.search-voorraad .search-voorraad-input {
+    display: flex;
+    flex-direction: row;
+    width: 30%;
+    padding: 10px;
+    justify-content: space-between;
+    border: solid 2px black;
+    background: #D9D9D9;
+    color: #000;
+
+}
+
+.search-voorraad .search-voorraad-input .search {
+    border: none; 
+    background: #D9D9D9;
+}
+
+.search-voorraad .search-voorraad-input .search::placeholder {
+    color: #000;
+}
+
+
+.search-voorraad .search-voorraad-input .buttons-zoekbalk {
+    align-items: center;
+    display: flex;
+    justify-content: end;
+    flex-direction: row;
+    gap: 15px;
+}
+
+.search-voorraad .search-voorraad-input .verwijder-tekst {
+    border: none;
+    background-color: #D9D9D9;
+    padding: none;
+    cursor: pointer;
+}
+
+.search-voorraad .submit {
+    border: none;
+    background-color: #D9D9D9;
+    padding: none;
+    cursor: pointer;
+}
+
+
 
 
 header nav div:last-child {
     width: 40%;
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: end;
+    padding-right: 20px;
 }
 
 header nav div:last-child a {
     text-decoration: none;
     color: black;
     padding: 15px;
+
+    font-family: Inter;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
 }
 
 
