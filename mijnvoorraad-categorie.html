@@ -50,84 +50,119 @@
 
         </nav>
 
-        <h2 class= "greet"> Mijn voorraad </h2>
-        
-        <div class= "search-voorraad"> 
-            <div class= "search-voorraad-input"> 
+        <h2 class="greet"> Mijn voorraad </h2>
+
+        <div class="search-voorraad">
+            <div class="search-voorraad-input">
                 <input type="text" class="search" placeholder="Zoek een product in je voorraad">
                 </input>
             </div>
 
-            <div class= "upload-kassabon-button"> 
-                <button>+ Upload kassabon</button> 
+            <div class="upload-kassabon-button">
+                <button>+ Upload kassabon</button>
             </div>
         </div>
     </header>
 
 
-<main>
-    <section class="resultaten-mijnvoorraad"> 
-        <h2 class= "titel"> Zoek op categorie <span>fruit en groenten</span></h2>
-        <p class="resultaten-aantal">We hebben <span>7 producten</span> gevonden</p>
+    <main>
+        <section class="resultaten-mijnvoorraad">
+            <h2 class="titel"> Zoek op categorie <span>fruit en groenten</span></h2>
+            <p class="resultaten-aantal">We hebben <span>7 producten</span> gevonden</p>
 
-        <div class="filters-resultaat-voorraad">
-            <button class="categorie">Fruit en groenten</button>
-            <button class="">Sorteren</button>
-            <button class="">Supermarkt</button>
-            <button class="">Eetvoorkeur</button>
-            <button class="alle-filters">Alle filters</button>
-        </div>
-    </section>
-    <section class="producten-wortel">
-        <div class="product-kaart"> 
-            <img src="https://images.unsplash.com/photo-1590868309235-ea34bed7bd7f?q=80&w=1854&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-            alt="">
-            <div class="info-product"> 
-                <div class="info-product-tekst">
-                    <p class="titel-product">Zak gewassen wortelen</p>
-                    <p class="product-aantal">500 gram</p>
-                </div>
-                <div class="button-product-aantal">
-                    <button class="min">-</button>
-                    <p class="aantal">x2</p>
-                    <button class="plus">+</button>
+            <div class="filters-resultaat-voorraad">
+                <button class="categorie">Fruit en groenten</button>
+                <button class="">Sorteren</button>
+                <button class="">Supermarkt</button>
+                <button class="">Eetvoorkeur</button>
+                <button class="alle-filters">Alle filters</button>
+            </div>
+        </section>
+        <section class="producten-wortel">
+            <div class="product-kaart">
+                <img src="https://images.unsplash.com/photo-1590868309235-ea34bed7bd7f?q=80&w=1854&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                    alt="">
+                <div class="info-product">
+                    <div class="info-product-tekst">
+                        <p class="titel-product">Zak gewassen wortelen</p>
+                        <p class="product-aantal">500 gram</p>
+                    </div>
+                    <div class="button-product-aantal">
+                        <button class="min">-</button>
+                        <p class="aantal">x <span id="count">2</span></p>
+                        <button class="plus">+</button>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="product-kaart"> 
-            <img src="https://images.unsplash.com/photo-1590868309235-ea34bed7bd7f?q=80&w=1854&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-            alt="">
-            <div class="info-product"> 
-                <div class="info-product-tekst">
-                    <p class="titel-product">Zak gewassen wortelen</p>
-                    <p class="product-aantal">500 gram</p>
-                </div>
-                <div class="button-product-aantal">
-                    <button class="min">-</button>
-                    <p class="aantal">x2</p>
-                    <button class="plus">+</button>
-                </div>
-            </div>
-        </div>
-        <div class="product-kaart"> 
-            <img src="https://images.unsplash.com/photo-1590868309235-ea34bed7bd7f?q=80&w=1854&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-            alt="">
-            <div class="info-product"> 
-                <div class="info-product-tekst">
-                    <p class="titel-product">Zak gewassen wortelen</p>
-                    <p class="product-aantal">500 gram</p>
-                </div>
-                <div class="button-product-aantal">
-                    <button class="min">-</button>
-                    <p class="aantal">x2</p>
-                    <button class="plus">+</button>
+            <div class="product-kaart">
+                <img src="https://images.unsplash.com/photo-1590868309235-ea34bed7bd7f?q=80&w=1854&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                    alt="">
+                <div class="info-product">
+                    <div class="info-product-tekst">
+                        <p class="titel-product">Zak gewassen wortelen</p>
+                        <p class="product-aantal">500 gram</p>
+                    </div>
+                    <div class="button-product-aantal">
+                        <button class="min">-</button>
+                        <p class="aantal">x <span id="count">2</span></p>
+                        <button class="plus">+</button>
+                    </div>
                 </div>
             </div>
-        </div>
-        
-    </section>
+            <div class="product-kaart">
+                <img src="https://images.unsplash.com/photo-1590868309235-ea34bed7bd7f?q=80&w=1854&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                    alt="">
+                <div class="info-product">
+                    <div class="info-product-tekst">
+                        <p class="titel-product">Zak gewassen wortelen</p>
+                        <p class="product-aantal">500 gram</p>
+                    </div>
+                    <div class="button-product-aantal">
+                        <button class="min">-</button>
+                        <p class="aantal">x <span id="count">2</span></p>
+                        <button class="plus">+</button>
+                    </div>
+                </div>
+            </div>
 
-</main>
+        </section>
+
+    </main>
+
+    <script>
+
+        // onclike count add 1
+        document.querySelector('.plus').addEventListener('click', function () {
+            if (document.getElementById('count').innerHTML >= 1) {
+                document.querySelector('.min').innerHTML = '-'
+            }
+            document.getElementById('count').innerHTML++
+        })
+
+        // onclike count minus 1
+        document.querySelector('.min').addEventListener('click', function () {
+            if (document.getElementById('count').innerHTML == 2) {
+                this.innerHTML = '<img src="./Icoontjes/noun-trash-1904171.svg" alt="" class="trashcan">'
+            }
+            if (document.getElementById('count').innerHTML == 1) {
+                document.getElementById('count').innerHTML == 1
+
+                console.log('test');
+                let text = "Weet je zeker dat je dit wilt verwijderen";
+                if (confirm(text) == true) {
+                    this.parentNode.parentNode.parentNode.parentNode.removeChild(this.parentNode.parentNode.parentNode);
+                } else {
+                    return
+                }
+            }
+
+            document.getElementById('count').innerHTML--
+
+
+        })
+
+    </script>
+
 </body>
-</html>
 
+</html>
