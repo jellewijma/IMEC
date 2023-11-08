@@ -454,8 +454,11 @@ header .greet {
     font-weight: 400;
 }
 
+
+/*NOG NAAST ELKAAR PLAATSEN*/
 .producten-wortel {
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
     gap: 15px;
     padding: 80px;
@@ -464,9 +467,8 @@ header .greet {
 
 .producten-wortel .product-kaart {
     width: calc(50vw - 87.5px);
-
-
 }
+
 .producten-wortel .product-kaart img {
     height: auto;
     width: calc(50vw - 87.5px);
@@ -538,63 +540,17 @@ header .greet {
 
 }
 
+/*Mijn voorraad -categorie pagina */
 
-
-
-
-/*
-
-
-.verwijderde-producten {
-    display: flex;
-    flex-direction: row;
-    gap: 15px;
-
-    overflow-x: scroll;
-    
+.resultaten-mijnvoorraad .filters-resultaat-voorraad .categorie {
+    background-color: #D9D9D9;
 }
-
-.verwijderde-producten .verwijderd-kaart {
-    display: flex;    
-    flex-direction: column;
-    width: calc(25vw - 51.25px);
-
-
-
-}
-
-.verwijderde-producten .verwijderd-kaart img {
-    height: auto;
-    width: calc(25vw - 51.25px);
-    aspect-ratio: 3/2;
-    object-fit: cover;
-    object-position: center;
-}
-
-.verwijderd-kaart .verwijderd-product-info {
-    padding: 20px;
-    background: #D9D9D9;
-    display: flex;
-    justify-content: space-between;
-
-}
-
-.verwijderd-kaart .verwijderd-product-info .product-naam {
-    font-size: 24px;
+.resultaten-mijnvoorraad .titel {
+    font-weight: normal;
+} 
+.resultaten-mijnvoorraad .titel span {
     font-weight: 700;
-
-
-}
-
-.verwijderd-kaart .verwijderd-product-info .recent-verwijderd-button {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-*/
-
-
+} 
 
 
 
