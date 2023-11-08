@@ -768,9 +768,95 @@ header .greet {
 }
 
 
+/*recept-informatie-pagina*/
+
+.hero-image-recept img {
+    display: flex;
+    justify-content: space-between;
+    width: 100vw;
+    height: auto;
+    aspect-ratio: 6/2;
+    object-fit: cover;
+    object-position: left;
+}
+
+.receptpagina-info {
+    padding: 80px;
+}
+
+.receptpagina-info p {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.receptpagina-info .informatie-tekst-recept {
+    padding: 60px 560px 0px 0px;
+    font-size: 24px;
+    font-weight: normal;
+}
 
 
 
+.ingredienten-recept {
+    padding: 80px;
+    background-color: #D9D9D9;
+}
+
+.ingredienten-recept h2 {
+    padding-bottom: 15px;
+}
+
+.ingredienten-recept .nodig {
+    padding-top: 30px;
+    padding-bottom: 15px;
+}
+
+
+
+.ingredienten-recept .ingredienten-kaarten {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+
+}
+
+.ingredienten-kaarten .kaart-ingredienten {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #B0B0B0;
+    padding: 15px;
+    width: calc(50vw - 96px);
+
+}
+
+.kaart-ingredienten .ingredienten-tekst{
+    display: flex;
+    flex-direction: column;
+}
+
+.ingredienten-kaarten .kaart-ingredienten .vinkje-ingredienten {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+.bereidingswijze {
+    padding: 80px;
+}
+
+.bereidingswijze .ingredienten-kaarten {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.bereidingswijze .ingredienten-kaarten .kaart-ingredienten {
+    padding: 15px;
+    background-color: #D9D9D9;
+
+
+}
 
 
 
